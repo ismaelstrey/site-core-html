@@ -4,7 +4,7 @@
 
 #main-banner
     background: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0 , .6 )), url('../img/banner.jpg')
-    height: 85vh
+    height: 100vh
     background-size: cover
     background-position-x: 20px
     background-position: center
@@ -66,6 +66,7 @@
     text-align: center
     padding: 2rem
     margin-bottom: 2rem
+    min-height: calc( 100vh - 60px)
     h2
         @extend %section-title
     .service-card-container
@@ -99,14 +100,23 @@
                 box-shadow: 0 1px 10px $light-color
 
 .jobs-container
+
     background-color: $secondary-bg
-    padding: 3rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    justify-items: center
+    align-content: center
+    align-items: center
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px
+    min-height: calc( 100vh - 60px)
 
     h2
         @extend %section-title
 
     .jobs-list
         display: flex
+        width: 100vw
         padding: 2rem 0
 
         .first-job
@@ -168,8 +178,8 @@
 footer
     display: flex
     flex-direction: column
-    margin-top: 20px
-    background-color: $background-color
+    background-color: $black
+    border-top: 4px solid $primary-color
     .footer-container-desc
         width: 99vw
         color: $light-color
@@ -180,14 +190,18 @@ footer
         align-items: center
         justify-items: center
         text-align: center
+
         &-title
             margin-top: 1em
             font-size: 2.5em
             text-align: center
+            color: $primary-color
         p
+            font-size: 1.5em
             padding: 1em
             margin: 1em
             width: 75%
+            color: $primary-color
 
     .footer-container
 
@@ -225,13 +239,16 @@ footer
                     border: 10px solid #6dcce113
                     border-radius: 7%
                     background-color: black
-                    box-shadow: rgba(225, 225, 225, 0.25) 0px 54px 55px, rgba(238, 231, 231, 0.12) 0px -12px 30px, rgba(234, 218, 218, 0.12) 0px 4px 6px, rgba(135, 216, 237, 0.17) 0px 12px 13px, rgba(116, 231, 231, 0.09) 0px -3px 5px
+                    box-shadow: $primary-color 0px 54px 55px, rgba(238, 231, 231, 0.12) 0px -12px 30px, rgba(234, 218, 218, 0.12) 0px 4px 6px, rgba(135, 216, 237, 0.17) 0px 12px 13px, rgba(116, 231, 231, 0.09) 0px -3px 5px
 
                     &-title
 
                         text-align: center
                         font-size: 1.5em
                         font-weight: bold
+                        color: $primary-color
+                        text-transform: capitalize
+
                     ul
                         display: flex
                         flex-direction: column
@@ -268,7 +285,7 @@ footer
         align-items: center
         padding: 2em 0
         width: 99vw
-        color: red
+        color: $primary-color
 
 @media screen and (max-width: 900px)
     .service-card-container

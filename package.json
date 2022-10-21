@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass -w ./sass/style.sass:./css/style.css",
-    "start": "http-server -p 8080 ./",
+    "start": "watch-http-server -p 8080 ./",
     "all": "npm run start & npm run sass"
   },
   "keywords": [],
