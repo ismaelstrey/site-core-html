@@ -5,7 +5,6 @@
 @include reset
 
 #main-banner
-    background: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0 , .6 )), url('../img/banner.jpg')
     height: 100vh
     background-size: cover
     background-position-x: 20px
@@ -30,9 +29,9 @@
                 position: relative
                 padding: 5px
                 z-index: -1
-                height: 60px
+                height: $height-menu
                 &:hover
-                    height: 60px
+                    height: $height-menu
         &-navbar
             display: flex
             align-items: center
@@ -50,6 +49,8 @@
             display: none
 
     .title-container
+        margin-top: $height-menu
+        background: url('../img/banner.jpg')
         color: $light-color
         display: flex
         flex-direction: column
@@ -70,7 +71,7 @@ main
     width: $width-main
 .services-container
     text-align: centers
-    min-height: calc( 100vh - 60px)
+    min-height: calc( 100vh - $height-menu)
     background-color: $light-color
     h2
         @extend %section-title
@@ -114,7 +115,7 @@ main
     align-content: center
     align-items: center
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px
-    min-height: calc( 100vh - 60px)
+    min-height: calc( 100vh - $height-menu)
 
     h2
         @extend %section-title

@@ -84,7 +84,6 @@ body::-webkit-scrollbar-thumb {
 
 footer {
   position: relative;
-  margin-top: 60px;
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -243,7 +242,6 @@ footer .footer-copy-right-container {
   }
 }
 #main-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/banner.jpg");
   height: 100vh;
   background-size: cover;
   background-position-x: 20px;
@@ -298,6 +296,8 @@ footer .footer-copy-right-container {
   display: none;
 }
 #main-banner .title-container {
+  margin-top: 60px;
+  background: url("../img/banner.jpg");
   color: #FFF;
   display: flex;
   flex-direction: column;
