@@ -1,5 +1,7 @@
 @import 'variables'
 @import 'utilities'
+@import 'footer'
+@import 'responsive'
 @include reset
 
 #main-banner
@@ -8,6 +10,7 @@
     background-size: cover
     background-position-x: 20px
     background-position: center
+    width: $width-main
 
     .nav-container
         display: flex
@@ -61,12 +64,14 @@
             @extend %title-text-shadow
             font-size: 4rem
             margin-top: 1rem
-
+main
+    display: flex
+    flex-direction: column
+    width: $width-main
 .services-container
-    text-align: center
-    padding: 2rem
-    margin-bottom: 2rem
+    text-align: centers
     min-height: calc( 100vh - 60px)
+    background-color: $light-color
     h2
         @extend %section-title
     .service-card-container
@@ -116,7 +121,7 @@
 
     .jobs-list
         display: flex
-        width: 100vw
+        width: $width-main
         padding: 2rem 0
 
         .first-job
@@ -175,131 +180,3 @@
             font-size: 1.5rem
             transition: .5s
             padding: 1rem
-footer
-    display: flex
-    flex-direction: column
-    background-color: $black
-    border-top: 4px solid $primary-color
-    .footer-container-desc
-        width: 99vw
-        color: $light-color
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-content: center
-        align-items: center
-        justify-items: center
-        text-align: center
-
-        &-title
-            margin-top: 1em
-            font-size: 2.5em
-            text-align: center
-            color: $primary-color
-        p
-            font-size: 1.5em
-            padding: 1em
-            margin: 1em
-            width: 75%
-            color: $primary-color
-
-    .footer-container
-
-        display: flex
-        align-items: center
-        justify-content: center
-        color: $light-color
-
-        &-links
-
-            display: flex
-            width: 100%
-            margin-top: 2em
-            &-list
-                display: flex
-                align-items: center
-                width: 100%
-                flex-direction: column
-                &-logo
-                    width: 100%
-                    height: 100%
-                    margin-right: 2em
-                    display: flex
-                    align-content: center
-                    align-items: center
-                    justify-content: center
-                    justify-items: left
-
-                img
-                    width: 350px
-                &-right
-                    display: flex
-                    flex-direction: column
-                    padding: 4em
-                    border: 10px solid #6dcce113
-                    border-radius: 7%
-                    background-color: black
-                    box-shadow: $primary-color 0px 54px 55px, rgba(238, 231, 231, 0.12) 0px -12px 30px, rgba(234, 218, 218, 0.12) 0px 4px 6px, rgba(135, 216, 237, 0.17) 0px 12px 13px, rgba(116, 231, 231, 0.09) 0px -3px 5px
-
-                    &-title
-
-                        text-align: center
-                        font-size: 1.5em
-                        font-weight: bold
-                        color: $primary-color
-                        text-transform: capitalize
-
-                    ul
-                        display: flex
-                        flex-direction: column
-                        align-content: center
-                        justify-content: center
-                        align-items: left
-
-                        li
-                            display: flex
-                            padding: 1em
-                            a
-                                display: flex
-                                justify-content: center
-                                justify-items: center
-                                align-content: center
-                                align-items: center
-                                text-decoration: none
-                                color: $primary-color
-                                i
-                                    padding: 0 10px
-                                    width: 50px
-                                    font-size: 2em
-                                span
-                                    display: block
-                                    margin-left: 0.5em
-                                &:hover
-                                    color: $light-color
-
-    .footer-copy-right-container
-
-        display: flex
-        flex-direction: column
-        align-content: center
-        align-items: center
-        padding: 2em 0
-        width: 99vw
-        color: $primary-color
-
-@media screen and (max-width: 900px)
-    .service-card-container
-        flex-direction: column
-    .services-card
-        display: flex
-        flex-direction: column
-        justify-content: center
-        width: 80vw !important
-    .footer-container
-        flex-direction: column
-    .footer-container-links
-        flex-direction: column
-    .footer-container-links-list-right
-        margin-top: 20px
-        width: 80vw
-        color: yellow

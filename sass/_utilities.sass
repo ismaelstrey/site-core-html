@@ -4,13 +4,16 @@
     padding: 0
     box-sizing: border-box
     font-family: 'lato'
+
 a
     text-decoration: none
+body
+    background-color: $background-color
 
 li
     list-style: none
 body::-webkit-scrollbar
-    width: 10px
+    width: $largura-barra-de-rolagem
 body::-webkit-scrollbar-track
     background: $background-color /* color of the tracking area */
 body::-webkit-scrollbar-thumb
@@ -22,7 +25,8 @@ body::-webkit-scrollbar-thumb
     transition: .3s
     &:hover
         color: $primary-color
-
+@mixin sombra
+    box-shadow: $primary-color 0px 54px 55px, rgba(238, 231, 231, 0.12) 0px -12px 30px, rgba(234, 218, 218, 0.12) 0px 4px 6px, rgba(135, 216, 237, 0.17) 0px 12px 13px, rgba(116, 231, 231, 0.09) 0px -3px 5px
 //PLACEHOLDER SELECTORS
 %title-text-shadow
     text-shadow: 3px 2px $black
@@ -64,3 +68,5 @@ body::-webkit-scrollbar-thumb
         margin-top: 1rem
         border-radius: 2rem
         padding: 1rem 1.5rem
+.btn-200
+    width: 400px
