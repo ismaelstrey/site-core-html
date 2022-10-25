@@ -6,7 +6,7 @@
 
 #main-banner
     height: 100vh
-    background-size: cover
+
     background-position-x: 20px
     background-position: center
     width: $width-main
@@ -19,6 +19,7 @@
         left: 0
         width: 100%
         background-color: $background-color
+
         z-index: 10
 
         .brand
@@ -50,7 +51,8 @@
 
     .title-container
         margin-top: $height-menu
-        background: url('../img/banner.jpg')
+        background: url('../img/banner.jpg') no-repeat
+        background-size: cover
         color: $light-color
         display: flex
         flex-direction: column
@@ -93,7 +95,6 @@ main
             transition: .3s
             margin-top: 1.5rem
             i
-                
 
                 color: $primary-color
                 font-size: 4rem
