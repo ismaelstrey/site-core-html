@@ -331,6 +331,10 @@ main {
   padding: 2rem;
 }
 .services-container .service-card-container .services-card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
   width: 30%;
   margin: 1px;
   padding: 2rem;
