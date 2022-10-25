@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
 
 footer {
   position: relative;
-  height: 30vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   width: calc(100vw - 5px);
@@ -149,8 +149,6 @@ footer .footer-container-links-list img {
   width: 350px;
 }
 footer .footer-container-links-list-right {
-  position: absolute;
-  bottom: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -201,15 +199,19 @@ footer .footer-container-links-list-right ul li a:hover {
   color: #FFF;
 }
 footer .footer-copy-right-container {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  padding: 2em 0;
-  width: 99vw;
-  color: #20D5F0;
+  justify-items: end;
+  justify-content: end;
+  padding: 1em 0;
+  background-image: linear-gradient(#000, #071B59);
+  width: calc(100vw - 5px);
+  color: #FFF;
+  min-height: 100px;
 }
 
 @media screen and (max-width: 900px) {
@@ -229,7 +231,11 @@ footer .footer-copy-right-container {
     flex-direction: column;
   }
   .footer-container-links {
+    align-content: flex-end !important;
     flex-direction: row;
+  }
+  .footer-container-links-list {
+    align-items: flex-end !important;
   }
   .footer-container-links-list-right {
     padding: 0px !important;

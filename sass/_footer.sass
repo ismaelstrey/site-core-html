@@ -1,6 +1,6 @@
 footer
     position: relative
-    height: 30vh
+    min-height: 30vh
     display: flex
     flex-direction: column
     width: $width-main
@@ -62,8 +62,6 @@ footer
                 img
                     width: 350px
                 &-right
-                    position: absolute
-                    bottom: 0px
                     display: flex
                     flex-direction: column
 
@@ -110,12 +108,16 @@ footer
                                     color: $light-color
 
     .footer-copy-right-container
-        position: absolute
+        position: relative
         bottom: 0px
         display: flex
         flex-direction: column
         align-content: center
         align-items: center
-        padding: 2em 0
-        width: 99vw
-        color: $primary-color
+        justify-items: end
+        justify-content: end
+        padding: 1em 0
+        background-image: linear-gradient($black, $background-color)
+        width: $width-main
+        color: $light-color
+        min-height: 100px
