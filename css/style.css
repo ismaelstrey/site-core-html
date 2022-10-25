@@ -91,6 +91,7 @@ footer {
   background-color: #000;
   border-top: 4px solid #20D5F0;
   font-weight: bold;
+  box-sizing: border-box;
 }
 footer .footer-container-desc {
   width: calc(100vw - 5px);
@@ -215,6 +216,24 @@ footer .footer-copy-right-container {
 }
 
 @media screen and (max-width: 900px) {
+  .other-jobs-container {
+    flex-direction: column;
+  }
+  .jobs-list {
+    flex-direction: column;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .first-job {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: calc(100vw - 5px) !important;
+  }
+  .job-card {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: calc(100vw - 5px) !important;
+  }
   footer {
     height: 100vh;
   }
@@ -228,6 +247,7 @@ footer .footer-copy-right-container {
     width: 80vw !important;
   }
   .footer-container {
+    min-height: calc(100vh - 100px) !important;
     flex-direction: column;
   }
   .footer-container-links {
@@ -249,7 +269,6 @@ footer .footer-copy-right-container {
 }
 #main-banner {
   height: 100vh;
-  background-size: cover;
   background-position-x: 20px;
   background-position: center;
   width: calc(100vw - 5px);
@@ -303,7 +322,8 @@ footer .footer-copy-right-container {
 }
 #main-banner .title-container {
   margin-top: 60px;
-  background: url("../img/banner.jpg");
+  background: url("../img/banner.jpg") no-repeat;
+  background-size: cover;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -388,6 +408,7 @@ main {
   height: 415px;
   margin: 0 2%;
   background-image: url("../img/code.jpg");
+  background-size: cover;
   position: relative;
   cursor: pointer;
   transition: 0.5s;
@@ -419,6 +440,8 @@ main {
   background-image: url("../img/bann.jpg");
 }
 .jobs-container .jobs-list .job-card-cover {
+  margin: 0px;
+  padding: 0px;
   position: absolute;
   top: 0;
   left: 0;
