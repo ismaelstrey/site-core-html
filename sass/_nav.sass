@@ -1,0 +1,60 @@
+#main-banner
+    height: 100vh
+
+    background-position-x: 20px
+    background-position: center
+    width: $width-main
+
+    .nav-container
+        display: flex
+        justify-content: space-between
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        background-color: $background-color
+
+        z-index: 10
+
+        .brand
+            color: $light-color
+            font-size: 2rem
+            @include main-hover
+            img
+                position: relative
+                padding: 5px
+                z-index: -1
+                height: $height-menu
+                &:hover
+                    height: $height-menu
+        &-navbar
+            display: flex
+            align-items: center
+            height: 100%
+
+            li
+                margin: 5px 10px
+
+                a
+                    color: $light-color
+                    @include main-hover
+        .fas .fa-bares
+            font-size: 2rem
+            color: $light-color
+            display: none
+
+    .title-container
+        margin-top: $height-menu
+        background: url('../img/tech.jpg') no-repeat
+        background-size: cover
+        color: $light-color
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        height: 100%
+
+        h2
+            @extend %title-text-shadow
+            font-size: 4rem
+            margin-top: 4rem
