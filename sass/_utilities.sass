@@ -4,6 +4,8 @@
     padding: 0
     box-sizing: border-box
     font-family: 'lato'
+    // overflow-y: hidden
+    overflow-x: hidden 
 
 a
     text-decoration: none
@@ -12,11 +14,11 @@ body
 
 li
     list-style: none
-body::-webkit-scrollbar
+*::-webkit-scrollbar
     width: $largura-barra-de-rolagem
-body::-webkit-scrollbar-track
+*::-webkit-scrollbar-track
     background: $background-color /* color of the tracking area */
-body::-webkit-scrollbar-thumb
+*::-webkit-scrollbar-thumb
     background-color: $primary-color /* color of the scroll thumb */
     border-radius: 20px /* roundness of the scroll thumb */
     border: 1px solid $primary-color/* creates padding around scroll thumb */

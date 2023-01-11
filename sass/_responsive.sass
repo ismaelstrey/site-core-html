@@ -1,8 +1,10 @@
 @media screen and (max-width: 900px)
     .other-jobs-container
+        width: $width-main !important
         flex-direction: column
     .jobs-list
         flex-direction: column
+        width: 100vw
         margin: 0px !important
         padding: 0px !important
     .first-job
@@ -10,11 +12,15 @@
         padding: 0px !important
         width: $width-main !important
     .job-card
+        display: flex
         margin: 0px !important
         padding: 0px !important
         width: $width-main !important
-    footer
-        height: 100vh
+        &-cover
+            display: flex
+            width: 100vw
+            background-color: red
+
     .service-card-container
         flex-direction: column
     .services-card
@@ -22,18 +28,49 @@
         flex-direction: column
         justify-content: center
         width: 80vw !important
+
+        // FOOTER
+    footer
+        height: 100vh
+        overflow: hidden
+    .footer-container-links-list-logo
+        overflow: hidden
+        height: 100px
+        img
+            width: 100px !important
+            min-height: 50px !important
     .footer-container
         min-height: calc( 100vh - 100px )!important
         flex-direction: column
-    .footer-container-links
-        align-content: flex-end !important
-        flex-direction: row
-        &-list
-            align-items: flex-end !important
-    .footer-container-links-list-right
-        padding: 0px !important
-        margin-top: 20px
-        width: 80vw
-        color: yellow
-        ul
-            flex-direction: column
+        overflow: hidden
+        &-links
+            align-content: flex-end !important
+            flex-direction: row
+            overflow: hidden
+            &-list
+                align-items: flex-end !important
+                overflow: hidden
+                &-right
+                    padding: 0px !important
+                    margin-top: 20px
+                    width: 80vw
+                    color: yellow
+                    ul
+                        flex-direction: column
+                        overflow: hidden
+                        li
+                            overflow: hidden
+                            a
+                                overflow: hidden
+
+                    span
+                        overflow: hidden
+
+    .tecnologias
+        &-lista
+            flex-direction: row
+            &-item
+                min-height: 20px
+                max-height: 50px
+                img
+                    max-width: 150px

@@ -1,0 +1,32 @@
+.tecnologias
+  width: $width-main
+  display: flex
+  flex-direction: column
+  animation: 10s infinite alternate-reverse
+  animation-name: slidein
+  &-lista
+    display: flex
+    justify-content: space-around
+    justify-items: center
+
+    &-item
+      display: flex
+      height: 200px
+      justify-content: center
+      justify-items: center
+      align-content: center
+      align-items: center
+      margin-right: 2rem
+      img
+        height: 50px
+        width: 130px
+.bg-color-primary
+
+  background-color: none
+
+@keyframes slidein
+  from
+    margin-left: 150%
+
+  to
+    margin-left: -50%
