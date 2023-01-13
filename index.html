@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Acessoria a provedores de internet ISP, configuracao de equipamentos e monitoramento, encaminhamento de asn">
+    <meta name="keywords"
+        content="redes, isp, provedores, cisco, olt, fiberhome, huawei, zte, parks, acessoria, monitoramento , zabix">
+    <meta name="author" content="Ismael Strey Pereira">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Core::Home</title>
 </head>
 
 <body id="home">
-
     <header id="main-banner">
         <div class="nav-container">
-            <a href="#" class="brand">
-
-            </a>
-
             <nav>
                 <ul class="nav-container-navbar">
                     <li> <a href="#home">Home</a></li>
@@ -38,8 +35,13 @@
             <i class="fas"></i>
         </div>
         <div class="title-container">
-            <img src="./img/LOGO4.png" id="logo" alt="logo" class="animate__animated animate__backInDown">
-            <a href="#" class="btn btn-primary btn-rounded">Fazer o orçamento</a>
+
+            <picture>
+                <source media="(min-width:650px)" srcset="./img/logo1.png">
+                <source media="(min-width:465px)" srcset="./img/logo2.png">
+                <img src="./img/LOGO4.png" id="logo" alt="Logo core infra estrutura de redes">
+            </picture>
+            <a href="#contato" class="btn btn-primary btn-rounded">Fazer o orçamento</a>
         </div>
     </header>
 
@@ -89,16 +91,16 @@
 
     </main>
     <div class="jobs-container" id="tecnologias">
-        <h2>Alguns de nossos trabalhos</h2>
+        <h1>Alguns de nossos trabalhos</h1>
         <div class="jobs-list">
             <div class="first-job job1">
                 <div class="job-card-cover">
                     <p class="job-card-title">
-                        Projeto 1
+                        Projeto de redes
                     </p>
                     <p class="job-card-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nisi accusantium asperiores
-                        autem.
+                        Balancear o tráfego das interfaces de rede em seus devidos cores é importantíssimo para o melhor
+                        aproveitamento do hardware.
 
                     </p>
                 </div>
@@ -107,11 +109,12 @@
                 <div class="job-card" id="job2">
                     <div class="job-card-cover">
                         <p class="job-card-title">
-                            Projeto 2
+                            Firewal do jeito certo.
                         </p>
                         <p class="job-card-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nisi accusantium asperiores
-                            autem.
+                            O Router/Firewall é um equipamento onde podemos inserir algumas regras de Firewall stateless
+                            para filtrar alguns pacotes indesejados como alguns tipos de spoofing, alguns pacotes UDP de
+                            certas portas usadas para ataques de amplificação, etc
 
                         </p>
                     </div>
@@ -119,11 +122,11 @@
                 <div class="job-card" id="job3">
                     <div class="job-card-cover">
                         <p class="job-card-title">
-                            Projeto 3
+                            Não tem ipv6 implantado ainda?
                         </p>
                         <p class="job-card-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nisi accusantium asperiores
-                            autem.
+                            Com o esgotamento do IPv4 mundialmente, precisamos tomar algumas providências para que a
+                            Internet não pare. As que vejo de imediatas são: IPv6 e CGNAT (Carrier Grade NAT).
 
                         </p>
                     </div>
@@ -131,11 +134,11 @@
                 <div class="job-card" id="job4">
                     <div class="job-card-cover">
                         <p class="job-card-title">
-                            Projeto 4
+                            Monitoramento de de seus ativos.
                         </p>
                         <p class="job-card-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nisi accusantium asperiores
-                            autem.
+                            Você ainda passa horas tentando edentificar falhas em sua rede, oferecemos serviços de
+                            configuração de zabbiz e grafana.
 
                         </p>
                     </div>
@@ -143,11 +146,10 @@
                 <div class="job-card" id="job5">
                     <div class="job-card-cover">
                         <p class="job-card-title">
-                            Projeto 5
+                            Sua rede cresceu e agora precisa de uma pegada mais profissional.
                         </p>
                         <p class="job-card-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nisi accusantium asperiores
-                            autem.
+                            Trabalhamos com acessoria e suporte a pequeno e grandes provedores.
 
                         </p>
                     </div>
@@ -176,7 +178,12 @@
             <div class="footer-container-links">
                 <div class="footer-container-links-list">
                     <div class="footer-container-links-list-logo">
-                        <img src="./img/LOGO4.png" alt="" srcset="">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="./img/logo1.png">
+                            <source media="(min-width:465px)" srcset="./img/logo2.png">
+                            <img src="./img/LOGO4.png" id="logo_footer"
+                                alt="Entre em contato para saber mais sobre nossos serviços">
+                        </picture>
                     </div>
                 </div>
                 <div class="footer-container-links-list">
@@ -186,7 +193,8 @@
                             <li><a href="https://www.google.com/maps/place/R.+Jo%C3%A3o+Louren%C3%A7o+Schaefer+-+Centro,+Igrejinha+-+RS,+95650-000/@-29.5743321,-50.7894372,19.25z/data=!4m5!3m4!1s0x951923b3531a4153:0x634f2828491f365e!8m2!3d-29.574451!4d-50.788909"
                                     target="_blank"><i class="fa-solid fa-location-dot"></i> <span>Igrejinha</span></a>
                             </li>
-                            <li><a href="#"><i class="fa-solid fa-mobile-retro"></i><span> (51)9 98409-7822</span></a>
+                            <li><a href="tel:+519984097822"><i class="fa-solid fa-mobile-retro"></i><span> (51)9
+                                        98409-7822</span></a>
                             </li>
 
                             <li><a href="mailto:"><i class="fa-solid fa-user"></i>
